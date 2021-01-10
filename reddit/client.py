@@ -32,7 +32,8 @@ class Reddit:
         #   - graph vs rest?
         #fetch = self.__build_api_call(stonk_query)
         #top_posts = fetch()
-        top_posts = self.__reddit.subreddit('wallstreetbets').top("all")
+        #top_posts = self.__reddit.subreddit('wallstreetbets').top("all")
+        top_posts = self.__reddit.subreddit('wallstreetbets').top("week")
 
         posts = []
         for post in top_posts:
